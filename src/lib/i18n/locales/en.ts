@@ -1,13 +1,21 @@
 import type { Dictionary } from '../types';
 
 const en = {
-	sidebar: {
-		application: 'Application',
-		dashboard: 'Overview',
-		mealPlanner: 'Meal planner',
+	shell: {
+		today: 'Today',
+		mealPlan: 'Meal plan',
 		recipes: 'Recipes',
-		shopping: 'Shopping list',
-		recent: 'Recent'
+		kitchen: 'Kitchen',
+		pantry: 'Pantry',
+		navigation: 'Main navigation',
+		accountMenu: 'Account menu',
+		account: 'Account',
+		household: 'Household',
+		preferences: 'Preferences',
+		notifications: 'Notifications',
+		units: 'Units',
+		signOut: 'Sign out',
+		comingSoon: 'Coming soon'
 	},
 	auth: {
 		changeEmailBtn: 'Change email',

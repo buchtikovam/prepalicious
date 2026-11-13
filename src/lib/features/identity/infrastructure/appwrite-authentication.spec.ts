@@ -14,6 +14,7 @@ function createAccount(overrides: Partial<AccountClient> = {}): AccountClient {
 			phrase: 'green-carrot'
 		})),
 		createSession: vi.fn(async () => undefined),
+		deleteSession: vi.fn(async () => undefined),
 		...overrides
 	};
 }

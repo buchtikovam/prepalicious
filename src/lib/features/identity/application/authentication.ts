@@ -15,4 +15,5 @@ export type EmailCodeChallenge = Readonly<{
 export interface Authentication {
 	requestEmailCode(command: RequestEmailCodeCommand): Promise<EmailCodeChallenge>;
 	verifyEmailCode(command: VerifyEmailCodeCommand): Promise<void>;
+	signOut(): Promise<void>;
 }

@@ -1,13 +1,21 @@
 import type { Dictionary } from '../types';
 
 const cs = {
-	sidebar: {
-		application: 'Aplikace',
-		dashboard: 'Přehled',
-		mealPlanner: 'Jídelní plán',
+	shell: {
+		today: 'Dnes',
+		mealPlan: 'Jídelní plán',
 		recipes: 'Recepty',
-		shopping: 'Nákupní seznam',
-		recent: 'Nedávné'
+		kitchen: 'Kuchyně',
+		pantry: 'Spíž',
+		navigation: 'Hlavní navigace',
+		accountMenu: 'Menu účtu',
+		account: 'Účet',
+		household: 'Domácnost',
+		preferences: 'Předvolby',
+		notifications: 'Oznámení',
+		units: 'Jednotky',
+		signOut: 'Odhlásit se',
+		comingSoon: 'Již brzy'
 	},
 	auth: {
 		changeEmailBtn: 'Změnit e-mail',

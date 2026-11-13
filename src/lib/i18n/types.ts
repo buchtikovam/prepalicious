@@ -3,13 +3,21 @@ export const SUPPORTED_LOCALES = ['en', 'cs'] as const;
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 
 export interface Dictionary {
-	sidebar: {
-		application: string;
-		dashboard: string;
-		mealPlanner: string;
+	shell: {
+		today: string;
+		mealPlan: string;
 		recipes: string;
-		shopping: string;
-		recent: string;
+		kitchen: string;
+		pantry: string;
+		navigation: string;
+		accountMenu: string;
+		account: string;
+		household: string;
+		preferences: string;
+		notifications: string;
+		units: string;
+		signOut: string;
+		comingSoon: string;
 	};
 
 	auth: {

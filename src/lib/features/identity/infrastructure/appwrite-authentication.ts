@@ -17,6 +17,7 @@ export type AccountClient = {
 		phrase: string;
 	}>;
 	createSession(input: { userId: string; secret: string }): Promise<unknown>;
+	deleteSession(input: { sessionId: string }): Promise<unknown>;
 };
 
 export class AppwriteAuthentication implements Authentication {
@@ -62,6 +63,14 @@ export class AppwriteAuthentication implements Authentication {
 			}
 
 			throw new IdentityError(IDENTITY_ERROR_CODES.CODE_VERIFICATION_FAILED, { cause });
+		}
+	}
+
+	async signOut(): Promise<void> {
+		try {
+			await this.account.deleteSession({ sessionId: 'current' });
+		} catch (cause) {
+			throw new IdentityError(IDENTITY_ERROR_CODES.SIGN_OUT_FAILED, { cause });
 		}
 	}
 }
